@@ -5,10 +5,12 @@
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import Drawer from '$lib/components/Drawer.svelte';
 </script>
 
 <AppShell>
 	<svelte:fragment slot="header"><Header /></svelte:fragment>
+	<svelte:fragment slot="sidebarRight"><Drawer /></svelte:fragment>
 	<!-- Router Slot -->
 	<slot />
 	<!-- ---- / ---- -->
