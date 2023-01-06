@@ -1,9 +1,7 @@
 <script lang="ts">
-	import { mobileMenu } from '$lib/stores';
 	import { Divider } from '@skeletonlabs/skeleton';
 </script>
 
-<!-- Mobile menu, show/hide based on menu state. -->
 <div id="mobile-menu" class="flex flex-col">
 	<div class="flex flex-col space-y-4 pt-2 pb-3">
 		<!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
