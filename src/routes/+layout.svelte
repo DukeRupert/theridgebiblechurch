@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
@@ -6,6 +6,10 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Drawer from '$lib/components/Drawer.svelte';
+	import type { LayoutData } from './$types';
+
+	export let data: LayoutData;
+	console.log(data);
 </script>
 
 <AppShell>
