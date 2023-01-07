@@ -2,13 +2,16 @@
 	import { theRidge, ridgeline, bibleChurch } from '$lib/shapes';
 	import { sineIn } from 'svelte/easing';
 	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
 	const stroke: string = 'stroke:#b61200; stroke-width: 0.5';
 	const fill: string = 'stroke:#b60000; fill: #b60000';
 
 	// Animations do not play on initial load by default. Condition change used to trigger logo animation.
 	let condition: boolean = false;
-	setTimeout(() => (condition = true));
+	onMount(() => {
+		setTimeout(() => (condition = true));
+	});
 </script>
 
 <h1 class="hidden">The Ridge Bible Church</h1>
