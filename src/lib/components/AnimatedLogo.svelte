@@ -11,6 +11,7 @@
 	setTimeout(() => (condition = true));
 </script>
 
+<h1 class="hidden">The Ridge Bible Church</h1>
 {#if condition}
 	<svg version="1.1" viewBox="0 0 268 116" xmlns="http://www.w3.org/2000/svg">
 		<g transform="translate(-16.4 -40.2)" fill="#b60000" stroke-width=".0847">

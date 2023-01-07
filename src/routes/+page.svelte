@@ -1,6 +1,7 @@
 <script lang="ts">
 	import AnimatedLogo from '$lib/components/AnimatedLogo.svelte';
 	import AboutUs from '$lib/components/AboutUs.svelte';
+	import RidgeRunner from '$lib/components/RidgeRunner.svelte';
 	import type { LayoutData } from './$types';
 
 	export let data: LayoutData;
@@ -12,4 +13,5 @@
 >
 	<AnimatedLogo />
 	<AboutUs data={data.church.about} />
+	<RidgeRunner />
 </div>
