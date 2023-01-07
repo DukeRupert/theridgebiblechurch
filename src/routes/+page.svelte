@@ -8,10 +8,8 @@
 </script>
 
 <div
-	class="mx-auto flex max-w-7xl items-center justify-between p-6 md:justify-start md:space-x-10 lg:px-8"
+	class="mx-auto flex flex-col max-w-7xl items-center justify-between p-6 md:justify-start md:space-x-10 lg:px-8"
 >
-	<div class="flex flex-col">
-		<AnimatedLogo />
-		<AboutUs data={data.church.about} />
-	</div>
+	<AnimatedLogo />
+	<AboutUs data={data.church.about} />
 </div>

@@ -1,7 +1,7 @@
 // Sanity Schema types
 export interface Church {
 	about: About[];
-	carousel: Carousel[];
+	carousel: CarouselImage[];
 	deacons: null;
 	directors: null;
 	elders: Elder[];
@@ -38,7 +38,7 @@ export enum Style {
 	Normal = 'normal'
 }
 
-export interface Carousel {
+export interface CarouselImage {
 	alt: string;
 	caption: string;
 	imageUrl: string;
