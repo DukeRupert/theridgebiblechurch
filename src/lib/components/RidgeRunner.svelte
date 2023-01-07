@@ -2,7 +2,7 @@
 </script>
 
 <div class="relative">
-	<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+	<div class="mx-auto py-12 max-w-7xl lg:py-24">
 		<div class="max-w-xl mx-auto lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
 			<div>
 				<div class="mt-6">

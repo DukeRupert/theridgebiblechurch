@@ -7,7 +7,7 @@
 </script>
 
 <div class="relative">
-	<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+	<div class="mx-auto py-12 max-w-7xl lg:py-24">
 		<div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
 			<div class="space-y-5 sm:space-y-4">
 				<h2>Meet our leadership</h2>

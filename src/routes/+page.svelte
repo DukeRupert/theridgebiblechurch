@@ -4,7 +4,7 @@
 	import RidgeRunner from '$lib/components/RidgeRunner.svelte';
 	import Staff from '$lib/components/Staff.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
-	import { enhance } from '$app/forms';
+	import triggerToast from '$lib/toast';
 
 	import type { LayoutData } from './$types';
 	import type { ActionData } from './$types';
@@ -14,6 +14,22 @@
 
 	// Reactively assign in order to pass into ContactForm component.
 	$: formData = form;
+	// Trigger toast notifications
+	$: if (form) {
+		if (!form.success) {
+			triggerToast({
+				message: 'Something went wrong.',
+				classes: '!bg-warning-500 text-on-warning-token'
+			});
+		}
+
+		if (form.success) {
+			triggerToast({
+				message: 'Success',
+				classes: '!bg-primary-500 text-on-primary-token'
+			});
+		}
+	}
 </script>
 
 <div

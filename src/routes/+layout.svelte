@@ -2,6 +2,7 @@
 	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
+	import { Toast } from '@skeletonlabs/skeleton';
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -19,3 +20,4 @@
 	<!-- ---- / ---- -->
 	<svelte:fragment slot="pageFooter"><Footer /></svelte:fragment>
 </AppShell>
+<Toast />

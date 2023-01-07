@@ -6,7 +6,7 @@
 </script>
 
 <div class="relative">
-	<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24 mt-12 lg:mt-24">
+	<div class="mx-auto py-12 max-w-7xl lg:py-24 mt-12 lg:mt-24">
 		<div class="md:flex">
 			<div class="mt-4">
 				<div class="flex flex-col justify-center items-center sm:mr-4 md:mr-8">

@@ -1,11 +1,16 @@
 <script lang="ts">
+	import { Alert } from '@skeletonlabs/skeleton';
 	import { enhance } from '$app/forms';
 	import type { Church } from '$lib/types/sanitySchema';
 	import type { ActionData } from '../../routes/$types';
+	import { fly } from 'svelte/transition';
+	import { quadOut } from 'svelte/easing';
 
 	export let data: Church;
 	export let form: ActionData;
 	$: console.log(form);
+
+	let visible = true;
 
 	function createTel(str: string): string {
 		let tel = str.replace(/\D+/g, '');
@@ -14,12 +19,12 @@
 	}
 </script>
 
-<div class="relative">
+<div class="relative w-full">
 	<div class="absolute inset-0">
 		<div class="absolute inset-y-0 left-0 w-1/2 " />
 	</div>
 	<div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-		<div class="py-16 px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+		<div class="py-16  lg:col-span-2  lg:py-24 ">
 			<div class="mx-auto max-w-lg">
 				<h2>Come join us!</h2>
 				<p>We meet weekly and you are always welcome.</p>
@@ -109,7 +114,7 @@
 				</dl>
 			</div>
 		</div>
-		<div class="py-16 px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+		<div class="py-16 lg:col-span-3 lg:py-24 xl:pl-12">
 			<div class="mx-auto max-w-lg lg:max-w-none">
 				<form action="" method="POST" class="grid grid-cols-1 gap-y-6" use:enhance>
 					<div>
@@ -121,6 +126,7 @@
 							autocomplete="name"
 							class="block w-full rounded-md py-3 px-4"
 							placeholder="Full name"
+							required
 						/>
 					</div>
 					<div>
@@ -132,6 +138,7 @@
 							autocomplete="email"
 							class="block w-full rounded-md py-3 px-4"
 							placeholder="Email"
+							required
 						/>
 					</div>
 					<div>
@@ -153,12 +160,25 @@
 							rows="4"
 							class="block w-full rounded-md py-3 px-4"
 							placeholder="Message"
+							required
 						/>
 					</div>
 					<div>
 						<button type="submit" class="btn btn-filled-primary">Submit</button>
 					</div>
 				</form>
+				{#if form?.error}
+					<ul class="mt-4 text-on-error-token">
+						{#each form.errors as error, i}
+							<div
+								class="mt-4"
+								in:fly={{ y: 100 * i, delay: 150 * i, duration: 500, easing: quadOut }}
+							>
+								<Alert {visible}><span>{error.message}</span></Alert>
+							</div>
+						{/each}
+					</ul>
+				{/if}
 			</div>
 		</div>
 	</div>

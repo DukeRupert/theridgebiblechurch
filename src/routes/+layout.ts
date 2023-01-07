@@ -1,9 +1,9 @@
-import sanity, { client } from '$lib/sanity';
+import { client } from '$lib/sanity';
 import type { LayoutLoad } from './$types';
 import type { Church } from '$lib/types/sanitySchema';
 import { error } from '@sveltejs/kit';
 
-export const load: LayoutLoad = async ({ params }) => {
+export const load: LayoutLoad = async () => {
 	const filter = '*[_type == "church"][0]';
 	const projection = `{
  		phone, 
