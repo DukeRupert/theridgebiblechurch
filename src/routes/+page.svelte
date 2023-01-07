@@ -3,10 +3,17 @@
 	import AboutUs from '$lib/components/AboutUs.svelte';
 	import RidgeRunner from '$lib/components/RidgeRunner.svelte';
 	import Staff from '$lib/components/Staff.svelte';
+	import ContactForm from '$lib/components/ContactForm.svelte';
+	import { enhance } from '$app/forms';
+
 	import type { LayoutData } from './$types';
+	import type { ActionData } from './$types';
 
 	export let data: LayoutData;
-	console.log(data);
+	export let form: ActionData;
+
+	// Reactively assign in order to pass into ContactForm component.
+	$: formData = form;
 </script>
 
 <div
@@ -16,4 +23,5 @@
 	<AboutUs data={data.church.about} />
 	<RidgeRunner />
 	<Staff data={data.church} />
+	<ContactForm data={data.church} form={formData} />
 </div>

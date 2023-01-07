@@ -42,6 +42,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sanity/client": "^4.0.1",
-		"@sanity/image-url": "^1.0.1"
+		"@sanity/image-url": "^1.0.1",
+		"zod": "^3.20.2"
 	}
 }
