@@ -5,9 +5,9 @@
 	export let data: InputValue[];
 </script>
 
-<div class="mt-24 sm:flex">
+<div class="mt-24 md:flex">
 	<div>
-		<div class="flex flex-col justify-center items-center">
+		<div class="flex flex-col justify-center items-center md:mr-4">
 			<h2>About Us</h2>
 
 			{#each data as block}
@@ -18,9 +18,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
+	<div class="mt-4 flex-shrink-0 mr-4 md:mr-0">
 		<img
-			class="w-full h-auto max-w-md lg:max-w-xl object-cover rounded-md"
+			class="w-full h-auto sm:max-w-md lg:max-w-xl object-cover rounded-md"
 			src="/images/sunset.webp"
 			alt="The ridge bible church at sunset."
 		/>
