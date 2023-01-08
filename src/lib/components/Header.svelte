@@ -7,7 +7,8 @@
 
 <AppBar>
 	<svelte:fragment slot="lead"
-		><img class="h-8" src="/RidgeLogo.svg" alt="The Ridge Bible Church logo" /></svelte:fragment
+		><a href="/"><img class="h-8" src="/RidgeLogo.svg" alt="The Ridge Bible Church logo" /></a
+		></svelte:fragment
 	>
 
 	<nav class="relative hidden md:flex justify-between">
