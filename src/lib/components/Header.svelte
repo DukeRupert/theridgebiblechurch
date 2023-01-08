@@ -16,9 +16,9 @@
 				<button use:menu={{ menu: 'about-us' }}>About Us</button>
 				<div class="list-nav card p-4 w-64 shadow-xl" data-menu="about-us">
 					<ul>
-						<li><a href="/">Why the Ridge?</a></li>
-						<li><a href="/">Statement of Faith</a></li>
-						<li><a href="/">Staff</a></li>
+						<li><a href="/why-the-ridge">Why the Ridge?</a></li>
+						<li><a href="/statement-of-faith">Statement of Faith</a></li>
+						<li><a href="/staff">Staff</a></li>
 					</ul>
 				</div>
 			</span>
