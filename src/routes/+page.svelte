@@ -33,7 +33,7 @@
 </script>
 
 <div
-	class="mx-auto flex flex-col max-w-7xl items-center justify-between p-6 md:justify-start md:space-x-10 lg:px-8"
+	class="bg-gray-50 dark:bg-gray-900 mx-auto flex flex-col max-w-7xl items-center justify-between p-6 md:justify-start md:space-x-10 lg:px-8"
 >
 	<AnimatedLogo />
 	<AboutUs data={data.church.about} />

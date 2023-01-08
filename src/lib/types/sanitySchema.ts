@@ -2,8 +2,8 @@
 export interface Church {
 	about: About[];
 	carousel: CarouselImage[];
-	deacons: null;
-	directors: null;
+	deacons: Elder[];
+	directors: Elder[];
 	elders: Elder[];
 	phone: string;
 	services: Service[];

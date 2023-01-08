@@ -5,10 +5,11 @@
 <div id="mobile-menu" class="flex flex-col">
 	<div class="flex flex-col space-y-4 pt-2 pb-3">
 		<!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-		<a href="/staff" class="block px-6 py-4">Staff</a>
-		<a href="/giving" class="block px-6 py-4">Giving</a>
+		<a href="/why-the-ridge" class="block px-6 py-4">Why the Ridge?</a>
+		<a href="/statement-of-faith" class="block px-6 py-4">Statement of Faith</a>
+		<a href="/staff" class="blcok px-6 py-4">Staff</a>
 		<a href="/sermons" class="block px-6 py-4">Sermons</a>
-		<a href="/statement-of-fait" class="block px-6 py-4">Statement of faith</a>
+		<a href="/contact-us" class="block px-6 py-4">Contact Us</a>
 	</div>
 	<Divider />
 	<div class="flex flex-col space-y-6 pt-8 pb-3">
