@@ -10,16 +10,9 @@
 <div class="relative">
 	<div class="mx-auto py-12 max-w-7xl lg:py-24">
 		<div class="text-center space-y-5 sm:space-y-4">
-			<h2 class="font-semibold leading-6 text-primary-600">Our</h2>
-			<h3 class="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-				Staff
-			</h3>
-
-			<p>
-				It shall not be so among you. But whoever would be great among you must be your servant... <strong
-					>Matthew 20:26</strong
-				>
-			</p>
+			<h3 class="block text-center text-xl font-semibold leading-6 text-primary-600">The Ridge Bible Church</h3>
+			<h1 class="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight sm:text-4xl">Staff</h1>
+		<p class="font-light">It shall not be so among you. But whoever would be great among you must be your servant... <strong>Matthew 20:26</strong></p>
 		</div>
 		<div class="mt-6 lg:mt-8 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-8">
 			{#if elders}

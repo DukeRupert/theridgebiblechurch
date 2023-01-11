@@ -8,12 +8,8 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Drawer from '$lib/components/Drawer.svelte';
 	import type { LayoutData } from './$types';
-	import { navigating } from '$app/stores';
-	import { drawerClose } from '$lib/utils';
 
 	export let data: LayoutData;
-
-	$: if ($navigating) drawerClose();
 </script>
 
 <AppShell>

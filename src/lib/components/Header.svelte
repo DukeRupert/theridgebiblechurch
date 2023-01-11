@@ -1,8 +1,12 @@
 <script lang="ts">
-	import { AppBar } from '@skeletonlabs/skeleton';
+	import { AppBar, drawerStore } from '@skeletonlabs/skeleton';
 	import { drawerOpen } from '$lib/utils';
 	import Menu from '$lib/icons/Menu.svelte';
 	import { menu } from '@skeletonlabs/skeleton';
+
+	function handleclick(): void {
+		drawerOpen({ id: 'navigation' });
+	}
 </script>
 
 <AppBar>
@@ -39,10 +43,7 @@
 	</nav>
 
 	<svelte:fragment slot="trail"
-		><button
-			class="btn-icon md:hidden"
-			type="button"
-			on:click={() => drawerOpen({ id: 'navigation' })}><Menu /></button
+		><button class="btn-icon md:hidden" type="button" on:click={handleclick}><Menu /></button
 		></svelte:fragment
 	>
 </AppBar>

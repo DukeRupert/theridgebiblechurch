@@ -7,12 +7,10 @@
 </script>
 
 <div class="mx-auto max-w-prose text-lg">
-	<h1>
-		<span class="font-semibold leading-6 text-primary-600">Our</span>
-		<span class="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight sm:text-4xl"
-			>Statement of Faith</span
-		>
-	</h1>
+	<div class="text-center space-y-5 sm:space-y-4">
+			<h3 class="block text-center text-xl font-semibold leading-6 text-primary-600">The Ridge Bible Church</h3>
+			<h1 class="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight sm:text-4xl">Statement of Faith</h1>
+		</div>
 </div>
 <div class="prose prose-lg dark:prose-invert mx-auto mt-6">
 	{#each statements as { statement, title }}

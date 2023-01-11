@@ -18,16 +18,18 @@
 >
 	<div class="lg:col-start-2 lg:pl-8">
 		<div class="mx-auto max-w-prose text-base lg:ml-auto lg:mr-0 lg:max-w-lg">
-			<h2 class="font-semibold leading-6 text-primary-600">Why</h2>
-			<h3 class="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-				The Ridge?
-			</h3>
-			<p class="mt-8 text-lg text-gray-500">
+			<div class="text-center space-y-5 sm:space-y-4">
+				<h3 class="block text-center text-xl font-semibold leading-6 text-primary-600">Why</h3>
+				<h1 class="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight sm:text-4xl">
+					The Ridge
+				</h1>
+			</div>
+			<h4 class="mt-8 text-lg text-gray-500">
 				It is always interesting to consider what an organization’s name and logo are based on. The
 				following are just a few of the ideas that are represented by, and in, our name, “The Ridge
 				Bible Church”, the mountain ridge logo with its three distinct peaks, and its crimson red
 				coloration against a white background.
-			</p>
+			</h4>
 			<div class="prose prose-indigo mt-5 text-gray-500">
 				<p>
 					The short version is that “The Ridge” is intended to be a conversation starter. The fact

@@ -8,7 +8,6 @@
 
 	export let data: Church;
 	export let form: ActionData;
-	$: console.log(form);
 
 	let visible = true;
 
