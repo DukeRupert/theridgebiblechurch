@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import AnimatedLogo from '$lib/components/AnimatedLogo.svelte';
 
 	export let data: PageData;
 </script>
@@ -20,9 +21,14 @@
 		<div class="mx-auto max-w-prose text-base lg:ml-auto lg:mr-0 lg:max-w-lg">
 			<div class="text-center space-y-5 sm:space-y-4">
 				<h3 class="block text-center text-xl font-semibold leading-6 text-primary-600">Why</h3>
-				<h1 class="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight sm:text-4xl">
+				<h1
+					class="hidden mt-2 block text-center text-3xl font-bold leading-8 tracking-tight sm:text-4xl"
+				>
 					The Ridge
 				</h1>
+			</div>
+			<div class="mt-8">
+				<AnimatedLogo />
 			</div>
 			<h4 class="mt-8 text-lg text-gray-500">
 				It is always interesting to consider what an organization’s name and logo are based on. The
@@ -55,7 +61,7 @@
 					On the other side is the valley of laxity, or licentiousness. This is the side we will
 					fall into if we buy into the lie that since we have intellectually assented to Jesus as
 					our savior, we then are covered by grace – no matter what we then do. Paul also argued
-					passionately against this error, going to far as to say in his letter to the Galatians,
+					passionately against this error, going so far as to say in his letter to the Galatians,
 					“God will not be mocked”. That warning should send a chill down the spine of anyone who
 					thinks they can live however they choose while claiming to be a follower of Christ.
 				</p>
