@@ -3,7 +3,6 @@
 	import SermonCard from '$lib/components/SermonCard.svelte';
 
 	export let data: PageData;
-	console.log(data);
 </script>
 
 <div class="mx-auto max-w-prose prose text-lg">

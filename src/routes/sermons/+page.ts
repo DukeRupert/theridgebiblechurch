@@ -1,7 +1,8 @@
 import type { YoutubeSnippet } from '$lib/types/youtube';
 import type { PageLoad } from './$types';
+import { PUBLIC_GOOGLE_API_KEY } from '$env/static/public';
 
-export const load: PageLoad = async () => {
+export const load: PageLoad = async ({ fetch }) => {
 	function parseTitle(str: string) {
 		// Function assumes a naming format of: DD MMM YY | SPEAKER NAME
 		// Remove special characters
@@ -21,7 +22,7 @@ export const load: PageLoad = async () => {
 	}
 
 	const endpoint = 'https://youtube.googleapis.com/youtube/v3/search?';
-	const key = 'AIzaSyD0JiBPqNYod6lGCKpSbyl-PmBdZ2X_JNI';
+	const key = PUBLIC_GOOGLE_API_KEY;
 	const id = 'UClnCId37ib0qSFxCqnXnbvQ';
 	const part = 'snippet';
 	const order = 'date';
